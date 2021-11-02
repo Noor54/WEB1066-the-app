@@ -1,12 +1,9 @@
 
-sudo : require
-
-  #language: python
+language: python
 # command to install dependencies
 install:
    - pip install -r requirements.txt
-script:
-   - make test
+script: make test
 
 # command to run tests
 #script:
