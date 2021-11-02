@@ -1,12 +1,11 @@
-
 language: python
 # command to install dependencies
+before_install:
+  - python -m pip install --upgrade pip
 install:
-   - pip install -r requirements.txt
-
-script: python my_app.py
-
+  - pip install --user -r requirements.txt --use-feature=2020-resolver
 # command to run tests
+script: echo foo
 #script:
   #- pytest
   # Run ANSIBLE checks
