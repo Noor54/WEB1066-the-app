@@ -5,8 +5,6 @@ sudo : require
 # command to install dependencies
 install:
    - pip install -r requirements.txt
-   - install docker boot2docker docker-compose
-
 script:
    - make test
 
