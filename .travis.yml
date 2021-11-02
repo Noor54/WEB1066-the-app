@@ -2,8 +2,8 @@ language: python
 # command to install dependencies
 install:
    - pip install -r requirements.txt
-     brew install docker boot2docker docker-compose
-     boot2docker init
+   - install docker boot2docker docker-compose boot2docker init
+
 script:
    - make test
 
